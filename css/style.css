@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --TransparentWhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "main ""footer ";
+
+    justify-content: center;
+
+
+    align-items: center;
+}
+
+
+h1 {
+    color: var(--Verylightgray);
+    font-size: 2em;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: .5em 0;
+}
+
+main {
+
+    grid-area: main;
+    margin: 2rem;
+    display: grid;
+
+    justify-content: center;
+}
+
+footer {
+    height: 40px;
+    grid-area: footer;
+
+
+}
+
+p {
+    color: var(--TransparentWhite);
+    font-family: 'Lexend Deca', sans-serif;
+    margin: .8em 0;
+}
+
+.background,
+.headings,
+button {
+    background-color: var(--Verylightgray);
+
+}
+
+.sedans {
+    background-color: var(--Brightorange);
+    border-radius: 8px 8px 0 0;
+}
+
+.sedans button {
+    color: var(--Brightorange)
+}
+
+.SUVS {
+    background-color: var(--Darkcyan);
+}
+
+.SUVS button {
+    color: var(--Darkcyan)
+}
+
+.Luxury {
+    background-color: var(--Verydarkcyan);
+    border-radius: 0 0 8px 8px;
+}
+
+.Luxury button {
+    color: var(--Verydarkcyan)
+}
+
+.card {
+
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card img {
+
+    width: 50px;
+    margin: 1em 0;
+}
+
+button {
+    border-radius: 20px;
+    padding: .5em 1em;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: .8em 0;
+    transition: all .2s ease-in-out;
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+button:hover {
+    background-color: transparent;
+    color: var(--Verylightgray);
+    border: 1px solid var(--Verylightgray);
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .sedans {
+        background-color: var(--Brightorange);
+        border-radius: 8px 0 0 8px;
+
+    }
+
+    .Luxury {
+        background-color: var(--Verydarkcyan);
+        border-radius: 0 8px 8px 0;
+    }
+}
