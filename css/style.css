@@ -31,8 +31,9 @@
 h1 {
     color: var(--Verylightgray);
     font-size: 2em;
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Big Shoulders Display' , sans-serif;
     margin: .5em 0;
+    text-transform: uppercase
 }
 
 main {
@@ -54,12 +55,13 @@ footer {
 p {
     color: var(--TransparentWhite);
     font-family: 'Lexend Deca', sans-serif;
-    margin: .8em 0;
+    margin: .8em 0 60px 0;
 }
 
 .background,
 .headings,
 button {
+  
     background-color: var(--Verylightgray);
 
 }
@@ -106,7 +108,8 @@ button {
 
 button {
     border-radius: 20px;
-    padding: .5em 1em;
+    
+    padding: .5em .8em;
     border: none;
     width: 150px;
     height: 40px;
